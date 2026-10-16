@@ -1,0 +1,19 @@
+:root{--bg:#0d0a1f;--panel:#18132f;--edge:#3b3170;--ink:#f4f0ff;--dim:#b8b0e0;--gold:#f8b800;--pink:#e8305a;--grn:#5cd65c}
+*{box-sizing:border-box}
+html{background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--ink);font:20px/1.5 "VT323",ui-monospace,monospace}
+a{color:var(--gold)}
+.hero{position:relative;height:280px;overflow:hidden;border-bottom:4px solid var(--gold)}
+.hero canvas{position:absolute;inset:0;width:100%;height:100%;image-rendering:pixelated}
+.hero .t{position:absolute;left:0;right:0;top:34px;text-align:center;font-family:"Press Start 2P",monospace;font-size:clamp(22px,6vw,40px);color:var(--gold);text-shadow:3px 3px 0 var(--pink),6px 6px 0 #000;letter-spacing:.02em}
+.hero .s{position:absolute;left:0;right:0;top:88px;padding:0 16px;text-align:center;font-size:24px;color:#fff;text-shadow:2px 2px 0 #000}
+main{max-width:760px;margin:0 auto;padding:28px 16px 60px}
+h1,h2{font-family:"Press Start 2P",monospace;font-weight:400;color:var(--gold);line-height:1.5}
+h1{font-size:20px}h2{font-size:14px;margin-top:34px}
+.card{background:var(--panel);border:3px solid var(--edge);box-shadow:0 0 0 3px #000;padding:16px 18px;margin:16px 0}
+.row{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.row img{width:96px;height:96px;border-radius:22px;image-rendering:pixelated}
+.btn{display:inline-block;font-family:"Press Start 2P",monospace;font-size:11px;padding:12px 14px;background:var(--gold);color:#1a1200;text-decoration:none;box-shadow:0 4px 0 #9a6f00,0 0 0 2px #000}
+dt{color:var(--gold);margin-top:12px}dd{margin:2px 0 0}
+footer{color:var(--dim);font-size:18px;text-align:center;padding:24px 16px;border-top:2px solid var(--edge)}
+@media (prefers-reduced-motion: reduce){.hero canvas{display:none}.hero{background:linear-gradient(#0b0820,#46205e 62%,#b0743a 62%)}}
